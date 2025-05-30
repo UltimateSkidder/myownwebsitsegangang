@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IsoCertifiedShit - Batch Files & Channel</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0f111a;
+      color: #e0e0e0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      /* Animation: fade-in */
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    a {
+      color: #68c7f2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #4ea4d8;
+    }
+
+    header {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid #22273b;
+    }
+
+    header h1 {
+      font-weight: 900;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.3rem;
+      color: #68c7f2;
+
+      /* Slide-in animation */
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: slideIn 0.8s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    header p {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #a0a8b8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      flex-grow: 1;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #68c7f2;
+      padding-left: 0.75rem;
+
+      /* Slide-in animation */
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: slideIn 0.8s ease forwards;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Batch Files List */
+    ul.batch-list {
+      list-style: none;
+      border: 1px solid #22273b;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #171b29;
+    }
+
+    ul.batch-list li {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #22273b;
+      font-weight: 500;
+      cursor: default;
+      user-select: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    ul.batch-list li:last-child {
+      border-bottom: none;
+    }
+    ul.batch-list li:hover {
+      background-color: #283047;
+      color: #68c7f2;
+    }
+
+    /* YouTube Button */
+    .btn-youtube {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.4rem;
+      background-color: #e52d27;
+      color: white;
+      font-weight: 700;
+      border-radius: 4px;
+      box-shadow: 0 3px 10px rgb(229 45 39 / 0.6);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .btn-youtube:hover {
+      background-color: #b0211c;
+      box-shadow: 0 0 15px 5px rgba(229, 45, 39, 0.8);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      color: #60687f;
+      border-top: 1px solid #22273b;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main {
+        margin: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IsoCertifiedShit</h1>
+    <p>Batch Files & YouTube Channel</p>
+  </header>
+
+  <main>
+    <section id="batch-files">
+      <h2>My Batch Files</h2>
+      <ul class="batch-list">
+        <li>MEMZ trojan</li>
+        <li>VISUAL launcher(i do not own visual itself)</li>
+        <li>Roblox Executor (coming) </li>
+        <li>RLM V1 (COMING SOON TO THE PUBLIC, ONGOING TESTING)</li>
+        <li>Batch File Utilities Collection</li>
+        <li> RLM V0.5 0.7 0.9 and more</li>
+      </ul>
+    </section>
+
+    <section id="youtube">
+      <h2>My YouTube Channel</h2>
+      <p>Check out my tutorials and projects on batch files and more.</p>
+      <a href="https://www.youtube.com/@IsoCertifiedShit" target="_blank" rel="noopener noreferrer" class="btn-youtube">Visit Channel</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 IsoCertifiedShit. All rights reserved.
+  </footer>
+</body>
+</html>
